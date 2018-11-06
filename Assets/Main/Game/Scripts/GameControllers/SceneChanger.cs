@@ -19,6 +19,7 @@ public class SceneChanger : MonoBehaviour {
 		foreach (Transform child in ScenesObject.transform)
 		{
 			scenes[i] = child.gameObject;
+			child.gameObject.SetActive(false);
 			i++;
 		}
 		currentScene = scenes[0];
