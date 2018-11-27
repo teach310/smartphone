@@ -33,8 +33,12 @@ SpriteAtlas:
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: c06382900aaf5499fb7e1358c3a83524, type: 3}
+  - {fileID: 21300000, guid: 5bdb3c97bbd0445d68c5c317374c7a37, type: 3}
   - {fileID: 21300000, guid: f52bbb9e2dfa34bdead1660f8db8e1e3, type: 3}
   m_PackedSpriteNamesToIndex:
+  - button_up
+  - button_down
   - arrow
   m_Tag: commonAtlas
   m_IsVariant: 0
