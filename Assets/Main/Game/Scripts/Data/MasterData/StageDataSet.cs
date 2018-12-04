@@ -6,15 +6,15 @@ using UnityEngine;
 namespace Wakame.Data
 {
 	public class StageData{
+		public int StageId{get; private set; }
 		public int[,] stages;
 
 		public class Parser{
-			public static StageData Parse(string csvData, int xLength = 30, int yLength = 30){
+			public static StageData Parse(int stageId, string csvData, int xLength = 30, int yLength = 30){
 				StringReader reader = new StringReader(csvData);
 				var lines = new List<string[]>();
 				while(reader.Peek() > -1) {
 					string line = reader.ReadLine();
-					Debug.Log(line);
 					lines.Add(line.Split(',')); // リストに入れる
 				}
 
@@ -24,13 +24,11 @@ namespace Wakame.Data
 				var newStages = new int[yLength, xLength];
 				for (int i = 0; i < newStages.GetLength(0); i++)
 				{
-					Debug.LogFormat("Stage y {0}", i);
 					for (int j = 0; j < newStages.GetLength(1); j++)
 					{
 						try
 						{
 							newStages[i,j] = int.Parse(lines[i][j]);
-							Debug.Log(newStages[i,j]);
 						}
 						catch (System.FormatException)
 						{
@@ -40,7 +38,10 @@ namespace Wakame.Data
 						
 					}
 				}
-				return new StageData(){stages = newStages};
+				return new StageData(){
+					StageId = stageId,
+					stages = newStages
+				};
 			}
 		}
 
@@ -53,7 +54,6 @@ namespace Wakame.Data
 	}
 
 	public class StageDataSet{
-
 		public List<StageData> stageDataList;
 	}
 }

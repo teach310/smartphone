@@ -5,6 +5,7 @@ using UnityEditor;
 using UniRx;
 using Wakame.Data;
 using System.Linq;
+using Wakame.Domain.Repository;
 
 public class ConvinientTools : EditorWindow {
 
@@ -16,7 +17,7 @@ public class ConvinientTools : EditorWindow {
 	void OnGUI(){
 		if(GUILayout.Button("Load Stage")){
 			ObservableWWW.Get(AppSettings.Instance.stageUrl)
-				.Select(x=>StageData.Parser.Parse(x))
+				.Select(x=>StageData.Parser.Parse(1, x))
 				.Subscribe(y => {
 					var stageDataSet = new StageDataSet(){ stageDataList = new List<StageData>(){y}};
 
@@ -29,6 +30,13 @@ public class ConvinientTools : EditorWindow {
 			// loader.Load(stageUrl)
 			// .Subscribe(x=>Debug.Log(x.text), e => Debug.LogError(e));
 		}
-		
+
+		if(GUILayout.Button("AnyTest")){
+			MasterDataManager.Instance.Load()
+				.Subscribe(_=>{
+					var stageData = StageDataRepository.FindById(1);
+					Debug.Log(stageData);
+				});
+		}
 	}
 }
