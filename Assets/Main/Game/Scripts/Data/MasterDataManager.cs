@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
 using Wakame.Data.Loader;
+using System;
 
 namespace Wakame.Data
 {
 	// MasterDataの保持、ロード
-	public class MasterDataManager{
-		static MasterDataManager instance = null;
-		public static MasterDataManager Instance{
-			get{ return instance ?? (instance = new MasterDataManager());}
+	public class StageDataManager{
+		static StageDataManager instance = null;
+		public static StageDataManager Instance{
+			get{ return instance ?? (instance = new StageDataManager());}
 		}
 
 		public StageDataSet StageDataSet{get; private set; }

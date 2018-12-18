@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
 using Wakame.Data;
+using System;
 
 namespace Wakame.Data.Loader
 {

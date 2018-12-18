@@ -32,7 +32,7 @@ public class ConvinientTools : EditorWindow {
 		}
 
 		if(GUILayout.Button("AnyTest")){
-			MasterDataManager.Instance.Load()
+			StageDataManager.Instance.Load()
 				.Subscribe(_=>{
 					var stageData = StageDataRepository.FindById(1);
 					Debug.Log(stageData);

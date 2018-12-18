@@ -8,7 +8,7 @@ namespace Wakame.Domain.Repository
 	public static class StageDataRepository {
 
 		static List<StageData> DataList{
-			get{return MasterDataManager.Instance.StageDataSet.stageDataList; }
+			get{return StageDataManager.Instance.StageDataSet.stageDataList; }
 		}
 		/// <summary>
 		/// 初級は1
