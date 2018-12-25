@@ -2,7 +2,7 @@
 
 namespace CA2.Data.MasterData{
 	[System.Serializable]
-	public class $ClassName${
+	public partial class $ClassName${
 		$Fields$
 	}
 }

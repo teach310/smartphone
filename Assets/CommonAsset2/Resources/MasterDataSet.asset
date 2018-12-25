@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760e1721375d6489b8b4f8fa7dce5f06, type: 3}
+  m_Name: MasterDataSet
+  m_EditorClassIdentifier: 
+  dataSet:
+    keyValueList:
+    - key: LIMITED_TIME
+      value: 180
+    - key: ENEMY_MAXIMUM_EASY
+      value: 4
+    - key: ENEMY_MAXIMUM_NORMAL
+      value: 5
+    - key: ENEMY_MAXIMUM_HARD
+      value: 6
+    - key: ENEMY_DEFAULT_VALUE
+      value: 3
+    - key: PER_SECOND_SCORE
+      value: 100
+    - key: PLAYER_SPEED_RATE
+      value: 1
+    enemyList:
+    - id: 1
+      speed: 1
+    enemyGroupList:
+    - group_id: 1
+      weight: 100
+      enemy_id: 1
+    itemList:
+    - id: 1
+      effect_type: 1
+      effect: 1
+    - id: 2
+      effect_type: 2
+      effect: 3
+    - id: 3
+      effect_type: 3
+      effect: 300
+    itemGroupList:
+    - group_id: 1
+      weight: 100
+      item_id: 1
+    stageSpawnList:
+    - stage_id: 1
+      spawn_type: 1
+      respown_time: 30
+      enemy_group_id: 1
+      item_group_id: 0
+      priority: 1
+  createdAt: 1545741520
