@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UniRx.Async;
 using UnityEngine;
@@ -20,9 +21,11 @@ namespace CA2 {
         
         [SerializeField] GameObject goLoadingBarrier;
 
-        public async UniTask GoForwardAsync<T> (object options = null)
+        public async UniTask GoForwardAsync<T> (object options = null, Func<UniTask> onBeforeLeaveAsync = null)
             where T : SceneBase { 
             goLoadingBarrier.SetActive(true);
+            if(onBeforeLeaveAsync != null)
+                await onBeforeLeaveAsync();
             await SceneManager.LoadSceneAsync(typeof(T).Name);
             goLoadingBarrier.SetActive(false);
             var nextScene = Component.FindObjectOfType<T>();

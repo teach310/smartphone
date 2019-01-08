@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MasterDataSettings
   m_EditorClassIdentifier: 
   masterDataUrl: https://script.google.com/macros/s/AKfycbxipjqeExO5JuD8uBX5M_rfvnZHEFSrFJb0CIka-fFx4joAIrI7/exec
-  useLocal: 0
+  useLocal: 1
   masterData: {fileID: 11400000, guid: 5b70ac0aff8a9459e999d896b4dd118c, type: 2}
