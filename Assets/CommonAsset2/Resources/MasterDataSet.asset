@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,23 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataSet:
     keyValueList:
-    - key: LIMITED_TIME
+    - key: TIME_LIMITE
       value: 180
-    - key: ENEMY_MAXIMUM_EASY
+    - key: ENEMY_NUM_MAX_EASY
       value: 4
-    - key: ENEMY_MAXIMUM_NORMAL
+    - key: ENEMY_MAX_NORMAL
       value: 5
     - key: ENEMY_MAXIMUM_HARD
       value: 6
     - key: ENEMY_DEFAULT_VALUE
       value: 3
-    - key: PER_SECOND_SCORE
+    - key: SCORE_PER_SECOND
       value: 100
-    - key: PLAYER_SPEED_RATE
-      value: 1
+    - key: PLAYER_SPEED
+      value: 100
+    stageDataList:
+    - stage_id: 1
+      max_enemy_num: 4
+      data_url: https://docs.google.com/spreadsheets/d/1qd7eHcuYrVAY2pQaLJjXSM_C3S4L1DgNI8z0odInP1Y/export?format=csv&gid=0
+    - stage_id: 2
+      max_enemy_num: 5
+      data_url: https://docs.google.com/spreadsheets/d/1qd7eHcuYrVAY2pQaLJjXSM_C3S4L1DgNI8z0odInP1Y/export?format=csv&gid=0
+    - stage_id: 3
+      max_enemy_num: 6
+      data_url: https://docs.google.com/spreadsheets/d/1qd7eHcuYrVAY2pQaLJjXSM_C3S4L1DgNI8z0odInP1Y/export?format=csv&gid=0
     enemyList:
     - id: 1
-      speed: 1
+      speed: 100
     enemyGroupList:
     - group_id: 1
       weight: 100
@@ -55,4 +66,4 @@ MonoBehaviour:
       enemy_group_id: 1
       item_group_id: 0
       priority: 1
-  createdAt: 1545741520
+  createdAt: 1546950797

@@ -4,6 +4,7 @@ namespace CA2.Data.MasterData{
 	[System.Serializable]
 	public partial class MasterDataSet{
 		public List<KeyValue> keyValueList;
+		public List<StageData> stageDataList;
 		public List<Enemy> enemyList;
 		public List<EnemyGroup> enemyGroupList;
 		public List<Item> itemList;
