@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff409888c2884f60bdf27bdea7cbdb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: 
+  NextScene: "\u3046\u3093\u3053"
   _count: 3
   countdownText: {fileID: 114558521693419140}
 --- !u!114 &114393759439818758
