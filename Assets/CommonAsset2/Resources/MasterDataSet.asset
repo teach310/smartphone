@@ -28,7 +28,7 @@ MonoBehaviour:
       value: 100
     - key: PLAYER_SPEED
       value: 100
-    stageDataList:
+    stageList:
     - stage_id: 1
       max_enemy_num: 4
       data_url: https://docs.google.com/spreadsheets/d/1qd7eHcuYrVAY2pQaLJjXSM_C3S4L1DgNI8z0odInP1Y/export?format=csv&gid=0
@@ -66,4 +66,4 @@ MonoBehaviour:
       enemy_group_id: 1
       item_group_id: 0
       priority: 1
-  createdAt: 1546950797
+  createdAt: 1546951738

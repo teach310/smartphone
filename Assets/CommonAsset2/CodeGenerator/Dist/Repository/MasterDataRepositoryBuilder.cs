@@ -8,7 +8,7 @@ namespace CA2.Data.MasterData {
 	public class MasterDataRepositoryBuilder {
 		public void Build (MasterDataStore dataStore) {
 			KeyValueRepository.Default = new KeyValueRepository (dataStore);
-			StageDataRepository.Default = new StageDataRepository (dataStore);
+			StageRepository.Default = new StageRepository (dataStore);
 			EnemyRepository.Default = new EnemyRepository (dataStore);
 			EnemyGroupRepository.Default = new EnemyGroupRepository (dataStore);
 			ItemRepository.Default = new ItemRepository (dataStore);
