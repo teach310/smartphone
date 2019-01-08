@@ -4,7 +4,8 @@
 SpriteAtlas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: player
   m_EditorData:
     serializedVersion: 2
@@ -30,15 +31,14 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 09dd602024b1f4db186bade59e96ff7b, type: 3}
+    totalSpriteSurfaceArea: 131072
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: d2e44848e4b09467e84bf83c668fb670, type: 3}
   - {fileID: 21300000, guid: 7c6d383be889d4e2d9d5f2bea7c4ac81, type: 3}
-  - {fileID: 21300000, guid: 1916649b4c88844bc8a60709d1cae1c0, type: 3}
   m_PackedSpriteNamesToIndex:
   - player_1
   - player_0
-  - player_2
   m_Tag: player
   m_IsVariant: 0
