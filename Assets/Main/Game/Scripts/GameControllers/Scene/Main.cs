@@ -103,7 +103,6 @@ namespace Wakame{
 
                         case 0:
                             tile_clone = Instantiate(tile,new Vector3 (base_x+i*50, base_y-(j*50), 0), Quaternion.identity,canvas.transform) as GameObject;
-							Debug.Log(base_y-(j*50));
 							tile_clone.name = count.ToString();
                         break;
 
