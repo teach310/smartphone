@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CA2;
 using UnityEngine;
+using UniRx.Async;
 
 namespace Wakame {
     public class Home : CA2.SceneBase {
@@ -13,7 +14,7 @@ namespace Wakame {
         }
 
         public void GoGame(){
-            // SimpleSceneNavigator.Instance.GoForwardAsync<Game>().Forget();
+            SimpleSceneNavigator.Instance.GoForwardAsync<Game>().Forget();
         }
     }
 }

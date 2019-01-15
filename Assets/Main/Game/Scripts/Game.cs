@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using CA2;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -47,8 +48,8 @@ namespace Wakame{
         [SerializeField]
         GameObject canvas;
 
-        void Awake(){
-			CreateStage(1);
+        public override void OnLoad(object options = null){
+            CreateStage(1);
         }
 
         private void CreateStage(int stage_id){
