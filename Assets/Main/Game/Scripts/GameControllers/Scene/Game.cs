@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Wakame{
 
-    public class Main : SceneBase {
+    public class Game : SceneBase {
 
 		// [SerializeField]
 		// private int _count=0;
