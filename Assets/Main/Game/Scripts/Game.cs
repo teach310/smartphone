@@ -90,8 +90,9 @@ namespace Wakame{
             };
 
             GameObject tile_clone;
-            int base_x = -1005;
-            int base_y = -165;
+            int base_x = -1008;
+            int base_y = -160;
+            int tile_size = 38;
 			int count = 0;
 
             //ToDO:stageの幅を定数で指定する
@@ -103,18 +104,21 @@ namespace Wakame{
                     switch(stage[j,i]){
 
                         case 0:
-                            tile_clone = Instantiate(tile,new Vector3 (base_x+i*50, base_y-(j*50), 0), Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
 							tile_clone.name = count.ToString();
                         break;
 
                         case 1:
-                            tile_clone = Instantiate(tile,new Vector3 (base_x+i*50, base_y-(j*50), 0), Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
                             tile_clone.GetComponent<BoxCollider2D>().enabled=false;
 							tile_clone.name = count.ToString();
                         break;
 
                         case 30:
-                            tile_clone = Instantiate(tile,new Vector3 (base_x+i*50, base_y-(j*50), 0), Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
                             tile_clone.GetComponent<BoxCollider2D>().enabled=false;
 							tile_clone.name = count.ToString();
                         break;
