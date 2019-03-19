@@ -31,15 +31,17 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 6e99cd97eb2c74f7fa11351cd0eee640, type: 3}
-    totalSpriteSurfaceArea: 0
+    totalSpriteSurfaceArea: 200704
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: c06382900aaf5499fb7e1358c3a83524, type: 3}
+  - {fileID: 21300000, guid: d27ee611761aa4a2fb07e9d4de702e60, type: 3}
   - {fileID: 21300000, guid: 5bdb3c97bbd0445d68c5c317374c7a37, type: 3}
   - {fileID: 21300000, guid: f52bbb9e2dfa34bdead1660f8db8e1e3, type: 3}
   m_PackedSpriteNamesToIndex:
   - button_up
+  - frame
   - button_down
   - arrow
   m_Tag: commonAtlas
