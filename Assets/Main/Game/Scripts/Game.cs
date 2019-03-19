@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using CA2;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
+using Wakame.Data;
+using System.Linq;
+using Wakame.Domain.Repository;
 
 namespace Wakame{
 
-    public class Game : SceneBase {
+    public class Game : CA2.SceneBase {
 
 		// [SerializeField]
 		// private int _count=0;
@@ -49,30 +53,17 @@ namespace Wakame{
         GameObject canvas;
 
         public override void OnLoad(object options = null){
-            CreateStage(1);
+
+            StageDataManager.Instance.Load()
+				.Subscribe(_=>{
+					var stageData = StageDataRepository.FindById(1);
+					Debug.Log(stageData.stages);
+                    CreateStage(stageData.stages);
+				});
+            
         }
 
-        private void CreateStage(int stage_id){
-
-            //ToDO:stage_idを元にマスターからデータをとる
-
-            int[,] stage = {
-                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,30,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,30,1,1,1,1,1,1,1,1,1,30,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
-                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-            };
+        private void CreateStage(int[,] _stage){
 
             GameObject tile_clone;
             int base_x = -500;
@@ -86,22 +77,35 @@ namespace Wakame{
 
 					count++;
 
-                    switch(stage[j,i]){
+                    Debug.Log(_stage[j,i]);
 
+                    switch(_stage[j,i]){
+
+                        //壁
                         case 0:
                             tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
                             tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
 							tile_clone.name = count.ToString();
                         break;
 
-                        case 1:
+                        //道
+                        case 10:
                             tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
                             tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
                             tile_clone.GetComponent<BoxCollider2D>().enabled=false;
 							tile_clone.name = count.ToString();
                         break;
 
-                        case 30:
+                        //初期敵配置　道
+                        case 15:
+                            tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
+                            tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
+                            tile_clone.GetComponent<BoxCollider2D>().enabled=false;
+							tile_clone.name = count.ToString();
+                        break;
+
+                        //初期アイテムランダム配置　アイテム出現ポイント　道
+                        case 21:
                             tile_clone = Instantiate(tile,Vector3.zero,Quaternion.identity,canvas.transform) as GameObject;
                             tile_clone.GetComponent<RectTransform>().anchoredPosition = new Vector3 (base_x+i*tile_size, 0 + base_y-(j*tile_size), 0);
                             tile_clone.GetComponent<BoxCollider2D>().enabled=false;
