@@ -19,7 +19,10 @@ public class ConvinientTools : EditorWindow {
 			ObservableWWW.Get(AppSettings.Instance.stageUrl)
 				.Select(x=>StageData.Parser.Parse(1, x))
 				.Subscribe(y => {
+
 					var stageDataSet = new StageDataSet(){ stageDataList = new List<StageData>(){y}};
+
+					Debug.Log(stageDataSet.stageDataList);
 
 					foreach (var item in stageDataSet.stageDataList)
 					{
@@ -35,7 +38,7 @@ public class ConvinientTools : EditorWindow {
 			StageDataManager.Instance.Load()
 				.Subscribe(_=>{
 					var stageData = StageDataRepository.FindById(1);
-					Debug.Log(stageData);
+					Debug.Log(stageData.stages);
 				});
 		}
 	}
