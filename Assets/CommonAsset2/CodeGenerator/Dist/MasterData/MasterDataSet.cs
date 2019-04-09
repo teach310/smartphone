@@ -10,5 +10,7 @@ namespace CA2.Data.MasterData{
 		public List<Item> itemList;
 		public List<ItemGroup> itemGroupList;
 		public List<StageSpawn> stageSpawnList;
+		public List<Spawn> spawnList;
+		public List<Tile> tileList;
 	}
 }

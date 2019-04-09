@@ -1,10 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using CA2.Data;
+using CA2.Data.MasterData;
 using UnityEngine;
 
 namespace Wakame{
-    public class ModelTile : MonoBehaviour
+
+    public class ModelTile
     {
-    
+        public Tile tile;
+
+        ModelTile(Tile tile){
+            this.tile = tile;
+        }
+
+        public static ModelTile CreateById(int tile_id) {
+            var tile = TileRepository.FindById(tile_id);
+
+            return new ModelTile(tile);
+        }
+
+        //初期化
+        public void Init(object responce){
+
+           //responceの中のデータを各パラメータに入れる
+            
+        }
+
+
     }
+
 }

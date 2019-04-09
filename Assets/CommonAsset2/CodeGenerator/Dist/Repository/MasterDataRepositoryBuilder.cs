@@ -14,6 +14,8 @@ namespace CA2.Data.MasterData {
 			ItemRepository.Default = new ItemRepository (dataStore);
 			ItemGroupRepository.Default = new ItemGroupRepository (dataStore);
 			StageSpawnRepository.Default = new StageSpawnRepository (dataStore);
+			SpawnRepository.Default = new SpawnRepository (dataStore);
+			TileRepository.Default = new TileRepository (dataStore);
 		}
 	}
 }
