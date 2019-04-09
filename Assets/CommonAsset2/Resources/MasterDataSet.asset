@@ -66,4 +66,119 @@ MonoBehaviour:
       enemy_group_id: 1
       item_group_id: 0
       priority: 1
-  createdAt: 1546951738
+    spawnList:
+    - spawn_id: 1
+      respown_time: 30
+      delay: 0
+    tileList:
+    - id: 0
+      icon_id: 0
+      collision_detection: 1
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 10
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 11
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 12
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 13
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 14
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 15
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 16
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 0
+      spawn_target_group_id: 0
+    - id: 20
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 21
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 22
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 23
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 24
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 25
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 26
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+    - id: 30
+      icon_id: 20
+      collision_detection: 0
+      spawn_target_type: 2
+      spawn_target_group_id: 1
+    - id: 31
+      icon_id: 20
+      collision_detection: 0
+      spawn_target_type: 2
+      spawn_target_group_id: 1
+    - id: 32
+      icon_id: 20
+      collision_detection: 0
+      spawn_target_type: 2
+      spawn_target_group_id: 1
+    - id: 33
+      icon_id: 20
+      collision_detection: 0
+      spawn_target_type: 2
+      spawn_target_group_id: 1
+    - id: 34
+      icon_id: 20
+      collision_detection: 0
+      spawn_target_type: 2
+      spawn_target_group_id: 1
+    - id: 35
+      icon_id: 20
+      collision_detection: 0
+      spawn_target_type: 2
+      spawn_target_group_id: 1
+    - id: 36
+      icon_id: 10
+      collision_detection: 0
+      spawn_target_type: 1
+      spawn_target_group_id: 1
+  createdAt: 1554816577
