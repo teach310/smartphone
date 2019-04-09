@@ -20,14 +20,6 @@ namespace Wakame{
             return new ModelTile(tile);
         }
 
-        //初期化
-        public void Init(object responce){
-
-           //responceの中のデータを各パラメータに入れる
-            
-        }
-
-
     }
 
 }
