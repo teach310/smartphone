@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SpriteAtlas
+  m_EditorClassIdentifier: 
+  m_name: SpriteAtlas
+  m_data:
+    m_serializedData: []
+  m_guid: f37fc899b9a764ec486a1646dff98726
+  m_serializeEntries:
+  - m_guid: 4074e32a8819549d5b9e845ff0a98be0
+    m_address: Tile/floor_30
+    m_readOnly: 0
+    m_serializedLabels: []
+  - m_guid: 56287511cb90348cabf9f2ecd5866fc3
+    m_address: Assets/Main/Game/UIAssets/StageTile/TileAtlas.spriteatlas
+    m_readOnly: 0
+    m_serializedLabels: []
+  - m_guid: 7d1514fe1b1d045f29c6eb35f235f317
+    m_address: Tile/floor_102
+    m_readOnly: 0
+    m_serializedLabels: []
+  - m_guid: e578fbee47bfc44fca6eab529cc5f187
+    m_address: Tile/floor_101
+    m_readOnly: 0
+    m_serializedLabels: []
+  - m_guid: f83a6b38626eb4f67b2fbc2fbecf2466
+    m_address: Tile/floor_0
+    m_readOnly: 0
+    m_serializedLabels: []
+  m_readOnly: 0
+  m_settings: {fileID: 11400000, guid: bc86c575692084256a6f7f1e72c43151, type: 2}
+  m_schemaSet:
+    m_schemas:
+    - {fileID: 11400000, guid: e46b2334b26bc4307b1a24071f8278f4, type: 2}
+    - {fileID: 11400000, guid: f1c8e9f2ccf05476791eb819e623caa9, type: 2}

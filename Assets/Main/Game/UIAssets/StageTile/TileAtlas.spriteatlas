@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TileAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: bcd369019ec6d47238ab6918d6b34cce, type: 3}
+    totalSpriteSurfaceArea: 16384
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f83a6b38626eb4f67b2fbc2fbecf2466, type: 3}
+  - {fileID: 21300000, guid: 4074e32a8819549d5b9e845ff0a98be0, type: 3}
+  - {fileID: 21300000, guid: e578fbee47bfc44fca6eab529cc5f187, type: 3}
+  - {fileID: 21300000, guid: 7d1514fe1b1d045f29c6eb35f235f317, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - floor_0
+  - floor_30
+  - floor_102
+  - floor_101
+  m_Tag: TileAtlas
+  m_IsVariant: 0
