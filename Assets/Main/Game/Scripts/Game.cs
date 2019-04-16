@@ -60,6 +60,8 @@ namespace Wakame{
 					Debug.Log(stageData.stages);
                     CreateStage(stageData.stages);
 				});
+
+            //ModelTile tile = ModelTile.CreateById(10);
             
         }
 
