@@ -76,109 +76,131 @@ MonoBehaviour:
       collision_detection: 1
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 10
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 11
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 12
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 13
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 14
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 15
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 16
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 0
       spawn_target_group_id: 0
+      spawn_value_id: 0
     - id: 20
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 21
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 22
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 23
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 24
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 25
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 26
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 30
-      icon_id: 20
+      icon_id: 30
       collision_detection: 0
       spawn_target_type: 2
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 31
-      icon_id: 20
+      icon_id: 30
       collision_detection: 0
       spawn_target_type: 2
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 32
-      icon_id: 20
+      icon_id: 30
       collision_detection: 0
       spawn_target_type: 2
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 33
-      icon_id: 20
+      icon_id: 30
       collision_detection: 0
       spawn_target_type: 2
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 34
-      icon_id: 20
+      icon_id: 30
       collision_detection: 0
       spawn_target_type: 2
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 35
-      icon_id: 20
+      icon_id: 30
       collision_detection: 0
       spawn_target_type: 2
       spawn_target_group_id: 1
+      spawn_value_id: 1
     - id: 36
-      icon_id: 10
+      icon_id: 101
       collision_detection: 0
       spawn_target_type: 1
       spawn_target_group_id: 1
-  createdAt: 1554816577
+      spawn_value_id: 1
+  createdAt: 1555417822

@@ -8,5 +8,6 @@ namespace CA2.Data.MasterData{
 		public int collision_detection;
 		public int spawn_target_type;
 		public int spawn_target_group_id;
+		public int spawn_value_id;
 	}
 }
