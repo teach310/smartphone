@@ -4,7 +4,7 @@ using CA2;
 using UnityEngine;
 using UniRx.Async;
 using UnityEngine.UI;
-using UnityEngine.AddressableAssets;
+// using UnityEngine.AddressableAssets;
 using UniRx;
 
 namespace Wakame {
