@@ -24,8 +24,8 @@ namespace Wakame {
             //     sampleSprite.sprite = tile0;
             // };
 
-            sampleImage.sprite = ResourceAssets.Default.LoadTile(0);
-            sampleSprite.sprite = ResourceAssets.Default.LoadTile(0);
+            sampleImage.sprite = ResourceAssets.Default.LoadEnemy(1)[0];
+            sampleSprite.sprite = ResourceAssets.Default.LoadEnemy(1)[1];
         }
 
         public void GoGame(){
