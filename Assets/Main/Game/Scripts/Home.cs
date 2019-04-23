@@ -18,11 +18,14 @@ namespace Wakame {
             // Debug.Log(Domain.Repository.StageDataRepository.FindById(1));
             // var keyValuePair = CA2.Data.KeyValueRepository.FindAll () [0];
 			// Debug.LogFormat ("Key {0}, Value{1}", keyValuePair.key, keyValuePair.value);
-            Addressables.LoadAsset<Sprite>("Tile/floor_0").Completed += sp => {
-                tile0 = sp.Result;
-                sampleImage.sprite = tile0;
-                sampleSprite.sprite = tile0;
-            };
+            // Addressables.LoadAsset<Sprite>("Tile/floor_0").Completed += sp => {
+            //     tile0 = sp.Result;
+            //     sampleImage.sprite = tile0;
+            //     sampleSprite.sprite = tile0;
+            // };
+
+            sampleImage.sprite = ResourceAssets.Default.LoadTile(0);
+            sampleSprite.sprite = ResourceAssets.Default.LoadTile(0);
         }
 
         public void GoGame(){
