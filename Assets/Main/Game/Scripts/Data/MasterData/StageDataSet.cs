@@ -10,7 +10,7 @@ namespace Wakame.Data
 		public int[,] stages;
 
 		public class Parser{
-			public static StageData Parse(int stageId, string csvData, int xLength = 30, int yLength = 30){
+			public static StageData Parse(int stageId, string csvData, int xLength = 15, int yLength = 15){
 				StringReader reader = new StringReader(csvData);
 				var lines = new List<string[]>();
 				while(reader.Peek() > -1) {
